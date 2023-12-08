@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: fantasy;
+        }
+       #form1{
+        display:   inline-block;
+        margin-left: 120px;
+        margin-top: 10px;
+       }
+        #mathImg{
+    border:2px solid black;
+    border-radius:10px;
+    height:  240px;
+    width: 200px;
+     margin-top: 82px;
+     margin-left: 130px;
+     
+}
+#nuMber1:hover{
+     background-color: rgb(204, 255, 252);
+     color:black;
+}
+#nuMber2:hover{
+     background-color: rgb(204, 255, 252);
+     color:black;
+}
+#nuMber3:hover{
+     background-color: rgb(204, 255, 252);
+     color:black;
+}
+#nuMber4:hover{
+     background-color: rgb(204, 255, 252);
+     color:black;
+}
+#nuMber5:hover{
+     background-color: rgb(204, 255, 252);
+     color:black;
+}
+#nuMber1:hover{
+     background-color: rgb(204, 255, 252);
+     color:black;
+}
+ 
+#submitButton{
+    color: rgb(55, 71, 85);
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submitButton:hover{
+    background-color: aquamarine;
+}
+#login{
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+#login:hover{
+    background-color: rgb(16, 97, 129);
+}
+
+    </style></head>
+<body>
+    <script>
+         function getCube()
+{    let num=document.getElementById('nuMber1').value;
+        if(!num){
+            alert('please Enter a valid number');
+        }
+        else{
+     alert(num*num*num);}
+}
+function getSquare(){
+    let num=document.getElementById('nuMber2').value;
+        if(!num){
+            alert('please Enter a valid number');
+        }
+        else{
+     alert(num*num);}
+}
+function fact(){
+    let fact=1;
+    let n=document.getElementById('nuMber3').value;
+    if(!n){
+            alert('please Enter a valid number');
+        }
+        else{ 
+    for(let i=1;i<=n;i++){
+       fact=fact*i;
+    }
+     alert(fact);}
+}
+function EvenOdd(){
+    let num=document.getElementById('nuMber4').value;
+    if(!num){
+            alert('please Enter a valid number');
+        }
+        else{ 
+    if(num % 2===0){
+        alert('Even');
+    }
+    else{
+        alert('Odd');
+    }}
+}
+function LeapYear(){
+    let year=document.getElementById('nuMber5').value;
+    if(!year){
+            alert('please Enter a valid number');
+        }
+        else{
+    if(year%4===0){
+        alert('Leap Year');
+    }
+    else{
+        alert('Not a Leap Year');
+    }}
+}
+    </script>
+    <img id="mathImg" src="https://e1.pxfuel.com/desktop-wallpaper/706/463/desktop-wallpaper-math-misc-hq-math-subjects.jpg"> 
+     
+    <form id="form1"> 
+         <input type="text"  id="nuMber1"  placeholder="To find cube"> 
+         <button onclick="getCube();" id="submitButton">Submit</button> <br>
+         <br><input type="text"  id="nuMber2"  placeholder="To find square"> 
+         <button onclick="getSquare();" id="submitButton">Submit</button><br><br>
+         <input type="text"  id="nuMber3"  placeholder="To find factorial"> 
+         <button onclick="fact();" id="submitButton">Submit</button><br><br>
+         <input type="text"  id="nuMber4"  placeholder="Even or Odd"> 
+         <button onclick="EvenOdd();" id="submitButton">Submit</button><br><br>
+         <input type="text"  id="nuMber5"  placeholder="Leap Year (or) Not"> 
+         <button onclick="LeapYear();" id="submitButton">Submit</button><br><br>
+         <input type="text" placeholder="Login here">
+         <button id="login">Login</button>
+     </form>
+    
+</body>
+</html>
